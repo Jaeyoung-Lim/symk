@@ -9,6 +9,7 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         build-essential \
         automake \
+        git\
      && rm -rf /var/lib/apt/lists/*
 
 COPY . ./
